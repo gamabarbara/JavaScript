@@ -1,0 +1,17 @@
+/* Implemente ao lado a função que recebe um número “n” que representa a quantidade de estudantes presentes em um evento e retorna a quantidade mínima de apertos de mãos necessários para todos se cumprimentarem. */
+
+function sequenciaDriven(number){
+let seq = [0, 1, 2];
+for(let i = 0; i < seq.length; i++){
+    let crescente = seq.sort()
+    let decrescente = crescente.reverse()
+    let add = decrescente[0] + decrescente[1] + decrescente[2]
+    seq.push(add)
+    console.log(seq.sort())
+    
+}
+}
+    
+
+
+sequenciaDriven(18)

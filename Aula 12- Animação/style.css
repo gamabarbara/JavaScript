@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quadrado{
+    width: 400px;
+    height: 400px;
+    background: #2186c4;
+    transition: width 1.5s;
+/*     animation-name: rotacionar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    CÓDIGO TRANSFERIDO PARA O JS
+ */
+}
+
+.vermelho{
+    background: #b23e2e;
+}
+
+@keyframes rotacionar {
+    from{
+        width: 500px;
+        transform: rotate(0);
+    } to {
+        width: 550px;
+        transform: rotate(360deg);
+    }
+}
